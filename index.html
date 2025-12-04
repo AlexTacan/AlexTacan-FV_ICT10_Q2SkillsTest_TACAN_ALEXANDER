@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Club Information</title>
+        <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 60%;
+        margin: 40px auto;
+        padding: 40px;
+        background-color: #fff5f5;
+        border: 3px solid #0a4c93;
+        border-radius: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    h1 {
+        color: #0a4c93;
+        font-size: 32px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    h2 {
+        color: #0a4c93;
+        font-size: 22px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    select, input {
+        width: 250px;
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid #0a4c93;
+        border-radius: 10px;
+        font-size: 16px;
+        outline: none;
+    }
+
+    select:focus, input:focus {
+        border-color: #0d64c7;
+        box-shadow: 0px 0px 6px rgba(10, 76, 147, 0.5);
+    }
+
+    button {
+        background-color: #0a4c93;
+        color: white;
+        padding: 12px 20px;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        width: 300px;
+        cursor: pointer;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background-color: #0d64c7;
+    }
+
+    #club-details {
+        margin-top: 25px;
+        font-size: 18px;
+        color: #0a4c93;
+        white-space: pre-line;
+        padding: 15px;
+    }
+</style>
+    </head>
+   <center><body>
+    <div class="container">
+    <h1>School Club Information</h1>
+    <br><br>
+    <h2>Select a club:</h2>
+    
+
+    <select id="club-dropdown" style="width: 400px;">
+        <option value="Science Club">Science Club</option>
+        <option value="Math Club">Math Club</option>
+        <option value="Marching Band">Marching Band</option>
+        <option value="Glee Club">Glee Club</option>
+        <option value="Basketball Varsity">Basketball Varsity</option>
+        <option value="Volleyball Varsity">Volleyball Varsity</option>
+    </select>
+    <br><br>
+    <button py-click="show_club_info">Show Club Information</button>
+ 
+    <br>
+    <p id="club-details"></p>
+    </div>
+    <script type="py" src="main.py"></script>
+    </body></center>
+</html>
